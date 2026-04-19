@@ -1,0 +1,12 @@
+on: push
+jobs :
+
+build-node:
+runs-on: ubantu-latest
+container: node:14
+step:
+-run : node --version
+-run : npm --version
+-uses : actions/checkout@v3
+-run : npm  instat
+-run : node index.js
