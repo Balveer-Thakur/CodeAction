@@ -8,5 +8,5 @@ step:
 -run : node --version
 -run : npm --version
 -uses : actions/checkout@v3
--run : npm  installed
+-run : npm  inslled
 -run : node index.js
